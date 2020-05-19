@@ -39,7 +39,7 @@ class Line(turtle.Turtle):
 	def label(self,x_position,y_position,angle,width):
 		self.goto(x_position,y_position)
 		self.shapesize(width,self.length)
-		self.setheading(angle*180/pi)
+		self.setheading(degrees(angle))
 
 # creats objects of line to set up a clock face
 class Clockface:
